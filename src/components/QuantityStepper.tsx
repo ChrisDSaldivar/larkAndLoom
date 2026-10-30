@@ -1,0 +1,5 @@
+import {FabricButton,TextileUnderlay} from './FabricButton';
+import {Icon} from './Icons';
+import './quantity-stepper.css';
+export interface QuantityStepperProps {value:number;onChange:(value:number)=>void;min?:number;max?:number;label?:string;textureImage?:string;}
+export function QuantityStepper({value,onChange,min=1,max=99,label='Quantity'}:QuantityStepperProps){return <div className="cloth-stepper" role="group" aria-label={label}><span className="counter-shared-cloth fb-btn--cream" aria-hidden="true"><TextileUnderlay cut="pillow" texture="linen" color="cream"/></span><button className="cloth-stepper-minus" type="button" aria-label="Decrease quantity" disabled={value<=min} onClick={()=>onChange(Math.max(min,value-1))}><Icon name="minus" size={26}/></button><output aria-live="polite" aria-atomic="true">{value}</output><FabricButton className="cloth-stepper-plus" cut="flower" texture="cotton" color="rose" aria-label="Increase quantity" disabled={value>=max} onClick={()=>onChange(Math.min(max,value+1))}><Icon name="plus" size={29}/></FabricButton></div>}

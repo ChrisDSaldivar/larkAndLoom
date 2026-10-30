@@ -1,0 +1,36 @@
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #2e342c;
+  background: #f7f5ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  --ll-cream: #f7f5ef;
+  --ll-paper: #fffdf7;
+  --ll-oat: #e8dfcc;
+  --ll-line: #e7e1d4;
+  --ll-ink: #2e342c;
+  --ll-muted: #817f73;
+  --ll-clay: #bc624c;
+  --ll-clay-dark: #9d4332;
+  --ll-sage: #7a896c;
+  --ll-sage-dark: #5f7153;
+  --ll-denim: #5d7994;
+  --ll-denim-dark: #47627c;
+  --ll-rose: #dba7a3;
+  --ll-rose-dark: #bd8985;
+  --ll-radius: 18px;
+  --ll-serif: 'Fraunces', Georgia, serif;
+  --ll-mono: 'DM Mono', monospace;
+  --ll-thread: rgba(255,255,255,.76);
+  --ll-shadow: 0 12px 40px rgba(58,47,32,.055);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+::selection { background: #edc8b6; }
+:focus-visible { outline: 3px solid #d5954a; outline-offset: 4px; }
